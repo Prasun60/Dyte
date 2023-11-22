@@ -15,7 +15,7 @@ app.use(cors(
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb://localhost:27017/logs", { useNewUrlParser: true, useUnifiedTopology: true }).then(()=>{
+mongoose.connect("mongodb+srv://prasun:abcd@cluster0.jany2mi.mongodb.net/logs", { useNewUrlParser: true, useUnifiedTopology: true }).then(()=>{
     console.log("Connected to database!");
 }).catch(()=>{
     console.log("Connection failed!");
